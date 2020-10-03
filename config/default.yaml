@@ -1,0 +1,10 @@
+title: The Gossiper
+description: The place where you can have your favorite image feeds.
+loading_message: Loading content, please wait a little bit... It's worth it
+rss_item_limit: 200
+rss_feed_list: [  
+  https://www.reddit.com/r/mathmemes/,
+  https://www.reddit.com/r/interestingasfuck/,
+  https://www.reddit.com/r/PenmanshipPorn/,
+  https://www.reddit.com/r/ProgrammerHumor/,
+]
