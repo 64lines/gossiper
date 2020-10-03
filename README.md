@@ -1,4 +1,4 @@
-# Gossiper
+# The Gossiper
 
 The Gossiper is a NodeJS server application that allows you to have a custom website that you can fill with your favorite Subreddits.
 
