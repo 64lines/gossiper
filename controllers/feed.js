@@ -6,7 +6,9 @@ const getImageFeed = async (rssFeedList, rssItemLimit) => {
   return formatFeed(await feedTransformed(rssFeedList, rssItemLimit));
 };
 
-const isItemImage = (item) => item && isImage(item.image);
+const isItemImage = (item) => {
+  return item && isImage(item.image);
+};
 
 const formatFeed = (feedList) => {
   return feedList.map(item => ({
@@ -15,7 +17,9 @@ const formatFeed = (feedList) => {
   })).filter(isItemImage).sort(randFunct);
 };
 
-const urlFeed = (feedUrl, limit) => `${feedUrl}.rss?limit=${limit}`;
+const urlFeed = (feedUrl, limit) => {
+  return `${feedUrl}.rss?limit=${limit}`;
+};
 
 const fetchRSSData = (feedUrl, limit) => {
   return new RSSParser().parseURL(urlFeed(feedUrl, limit));

@@ -6,7 +6,9 @@ const tryCatch = (parameter, tryFunct, catchFunct) => {
   }
 };
 
-const eq = (a, b) => a === b;
+const eq = (a, b) => {
+  return a === b;
+};
 
 module.exports.tryCatch = tryCatch;
 module.exports.eq = eq;
